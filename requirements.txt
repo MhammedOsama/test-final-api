@@ -6,3 +6,4 @@ numpy
 mediapipe
 librosa
 moviepy
+gunicorn
