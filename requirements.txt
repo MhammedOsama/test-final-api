@@ -1,0 +1,8 @@
+Flask
+flask-cors
+tensorflow==2.18.0
+opencv-python
+numpy
+mediapipe
+librosa
+moviepy

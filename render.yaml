@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: deception-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: PORT
+        value: 5000
