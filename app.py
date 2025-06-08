@@ -23,9 +23,6 @@ face_mesh = mp_face_mesh.FaceMesh(
 # Load model
 model = tf.keras.models.load_model("best_multi_model3_acc99.h5")
 
-# Print model input names → very important to check
-print("Model inputs:", model.inputs)
-
 
 # Functions from your notebook
 def mediapipe_predictions(frame, model):
