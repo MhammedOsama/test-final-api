@@ -5,8 +5,11 @@ aptPkgs = [
     "libsm6",
     "libxext6",
     "libxrender1",
-    "ffmpeg"
+    "ffmpeg",
+    "libgl1"    # force additional package
 ]
 
 [phases.install]
-cmds = ["apt-get update && apt-get install -y libgl1-mesa-glx libglib2.0-0 libsm6 libxext6 libxrender1 ffmpeg"]
+cmds = [
+    "apt-get update && apt-get install -y libgl1-mesa-glx libglib2.0-0 libsm6 libxext6 libxrender1 ffmpeg libgl1"
+]
